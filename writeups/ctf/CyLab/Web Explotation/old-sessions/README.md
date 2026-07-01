@@ -8,7 +8,7 @@ Ciò consente a un malintenzionato che utilizzi successivamente lo stesso browse
 1. Ho aperto la pagina di login dell'applicazione.
 2.  Ho usato gli strumenti sviluppatore per ispezionare la pagina
 3. Mi sono registrato con un utente di prova e ho fatto il login
-4. Nella homepage del sito ho visto questo commento:![Commento nel sorgente che riamanda a /sessions](assets/01-sessions-comment.png)
+4. Nella homepage del sito ho visto questo commento: <p align="center"> <img src="assets/01-sessions-comment.png" alt="Commento nel sorgente che rimanda a /sessions" width="500"> </p>
 
 ### Individuazione cookie di sessione
 Navigando verso: http://dolphin-cove.picoctf.net:58666/sessions ho trovato l'elenco dei cookie di sessione attivi degli utenti registrati:
@@ -20,7 +20,8 @@ Navigando verso: http://dolphin-cove.picoctf.net:58666/sessions ho trovato l'ele
 ### Sfruttamento con Burp Suite
 - **Proxy -> Intercept**: ho attivato l'intercettazione e ho fatto passare dal proxy di Burp la richiesta GET verso la home page dell'applicazione.
 - **Send to Repeater**: ho inoltrato la richiesta intercettata al modulo Repeater per poterla modificare e reinviare liberamente.
-- **Sostituzione cookie**: Ho aggiunto all'header la richiesta con il cookie:![Risposta del Repeater con l'aggiunta del cookie](assets/02-cookie-BurpSuite.png)]
+- **Sostituzione cookie**: Ho aggiunto all'header la richiesta con il cookie:
+  <p align="center"> <img src="assets/02-cookie-BurpSuite.png" alt="Pacchetto rinviato con aggiunta di cookie" width="500"> </p>]
 - **Send**: la risposta è stata 200 OK, e il body HTML della homepage caricato come utente admin contenente anche la flag
 
 ### Flag

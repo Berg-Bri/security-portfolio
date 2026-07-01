@@ -1,5 +1,5 @@
 #### Descrizione
-Sito che permette di pubblicare "annunci" tramite un form, con un riferimento esplicito nella descrizione all'uso di "template" — indizio diretto verso una possibile [SSTI](writeups/ctf/CyLab/WebExplotation/Techniques/Server-Side-Template-Injection-(SSTI))).
+Sito che permette di pubblicare "annunci" tramite un form, con un riferimento esplicito nella descrizione all'uso di "template", indizio diretto verso una possibile [SSTI](writeups/ctf/CyLab/WebExplotation/Techniques/Server-Side-Template-Injection-(SSTI)).
 
 <p align="center"> <img src="assets/HomeDelSito.png" width="500"> </p>
 

@@ -15,10 +15,14 @@ security-portfolio/
 │   ├── ctf/
 │   │   └── CyLab/
 │   │       └── Web Exploitation/
-│   │           ├── README.md          #
+│   │           ├── README.md
+|	|			├──	Techniques
+|   |           |    └── ssti
+|   |           |
+|	|			├──	crack-the-gate1/          #
 │   │           ├── old-sessions/
-│   │           └── <nuova-macchina>
-|   |
+│   │           ├── ssti1/
+|	|			 
 │   └── metasploitable/
 │       └── README.md                  # 
 |     

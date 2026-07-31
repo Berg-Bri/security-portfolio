@@ -1,45 +1,31 @@
 # security-portfolio
-Computer science student learning offensive security through hands-on practice. 
-This repository documents my journey.
+Repository personale di studio ed esercitazione in ambito security.
+Raccolta di writeup CTF, analisi di vulnerabilità e tecniche sui tool utilizzati, con l'obiettivo di documentare in modo strutturato metodologia e risultati di ogni attività svolta.
 
-Everything here is built by doing: breaking things, understanding why they break, and writing it down.
-
----
-## What's in here
+## Struttura
 
 ```
 security-portfolio/
-├── README.md              # 
-│
-├── writeups/
-│   ├── ctf/
-│   │   └── CyLab/
-│   │       └── Web Exploitation/
-│   │           ├── README.md
-|	|			├──	Techniques
-|   |           |    └── ssti
-|   |           |
-|	|			├──	crack-the-gate1/          #
-│   │           ├── old-sessions/
-│   │           ├── ssti1/
-|	|			 
-│   └── metasploitable/
-│       └── README.md                  # 
-|     
+├── README.md
+├── knowledge-base/
+├── templates/
 ├── tools/
-    ├── burp-suite-basics.md
-    └── <altri-tool>/                  
-
+│
+└── writeups/
+    └── ctf/
+        ├── CyLab/
+        │   ├── Cryptography/
+        │   ├── Forensics/
+        │   ├── ReverseEngineering/
+        │   └── Web Exploitation/
+        └── metasploitable/
 ```
+## Etica
 
----
-## Stack
+Tutte le attività documentate in questo repository sono state condotte su sistemi di proprietà personale o su ambienti predisposti per la ricerca in sicurezza (piattaforme CTF, laboratori, macchine vulnerabili di training).
 
-**Offensive tools** — Kali Linux, Metasploit, nmap, Burp Suite, sqlmap  
-**Scripting** — Python, C  
+Le tecniche descritte non devono essere utilizzate su sistemi per i quali non si dispone di un'autorizzazione scritta esplicita.
 
----
-## Ethics
+## Licenza
 
-All activity in this repository is performed on machines I own or systems explicitly designed for security research.
-Never use these techniques on systems you don't have explicit written permission to test.
+Questo repository è distribuito con licenza [MIT](LICENSE).

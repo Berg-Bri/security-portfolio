@@ -1,7 +1,4 @@
-Metodi HTTP principali, con focus su implicazioni di sicurezza utili in fase di testing/pentest.
-
----
-#### GET
+#### 📥GET
 
 Richiede una risorsa. **Non dovrebbe** avere side-effect sul server (safe + idempotent).
 
@@ -9,8 +6,7 @@ Richiede una risorsa. **Non dovrebbe** avere side-effect sul server (safe + idem
 
 **Security note**: parametri spesso in query string → finiscono in log, browser history, referer header. Mai usare per dati sensibili (token, password).
 
----
-#### HEAD
+#### 👀HEAD
 
 Identico a GET, ma il server restituisce **solo gli header di risposta**, senza il body.
 
@@ -22,8 +18,7 @@ Identico a GET, ma il server restituisce **solo gli header di risposta**, senza 
 - Alcuni server/WAF applicano controlli di autorizzazione **diversi** su GET vs HEAD → un endpoint protetto su GET potrebbe rispondere senza autenticazione su HEAD (**bypass di access control**)
 - Usato per fingerprinting silenzioso (versione server, tecnologie) senza generare traffico/log pesanti
 
----
-#### POST
+#### 📤POST
 
 Invia dati al server per creare una risorsa o eseguire un'azione. **Non idempotente** (richieste ripetute possono creare più risorse).
 
@@ -31,9 +26,7 @@ Invia dati al server per creare una risorsa o eseguire un'azione. **Non idempote
 
 **Security note**: target principale per SQLi, injection nei body (JSON/form), CSRF (mancanza di token).
 
----
-
-#### PUT
+#### 📝PUT
 
 Crea o **sostituisce interamente** una risorsa a un URI specifico. Idempotente (ripetere la stessa PUT dà lo stesso risultato).
 
@@ -41,15 +34,13 @@ Crea o **sostituisce interamente** una risorsa a un URI specifico. Idempotente (
 
 **Security note**: se non correttamente autorizzato, può permettere upload/overwrite arbitrario di file (**unrestricted file upload**).
 
----
-#### PATCH
+#### 🩹PATCH
 
 Modifica **parzialmente** una risorsa esistente. Non necessariamente idempotente.
 
 `es: PATCH /users/1` con body `{email: "new@x.com"}` → aggiorna solo l'email
 
----
-#### DELETE
+#### 🗑️DELETE
 
 Elimina la risorsa specificata. Idempotente (eliminarla due volte → stesso stato finale).
 
@@ -57,8 +48,7 @@ Elimina la risorsa specificata. Idempotente (eliminarla due volte → stesso sta
 
 **Security note**: da testare sempre per **IDOR** (Insecure Direct Object Reference) — posso cancellare risorse di altri utenti cambiando l'ID?
 
----
-#### OPTIONS
+#### ❓OPTIONS
 
 Richiede quali metodi HTTP sono supportati da una risorsa/endpoint.
 
@@ -66,21 +56,17 @@ Richiede quali metodi HTTP sono supportati da una risorsa/endpoint.
 
 **Perché è utile in pentest**: enumera rapidamente i metodi disponibili su un endpoint, utile per scoprire metodi "nascosti" o non documentati (es. PUT/DELETE esposti per errore).
 
----
-#### TRACE
+#### 🪞TRACE
 
 Il server rimanda indietro (echo) la richiesta ricevuta, per debug.
 
 **Security note**: **da disabilitare sempre** in produzione → vulnerabile a **Cross-Site Tracing (XST)**, permette di bypassare la protezione `HttpOnly` sui cookie in certi scenari con XSS.
 
----
-#### CONNECT
+#### 🔌CONNECT
 
 Usato per stabilire un tunnel (tipicamente TCP) attraverso un proxy, es. per HTTPS.
 
----
-
-## Tabella riassuntiva
+#### 📊Tabella riassuntiva
 
 |Metodo|Safe|Idempotente|Ha body richiesta|Nota sicurezza|
 |---|---|---|---|---|
@@ -95,8 +81,7 @@ Usato per stabilire un tunnel (tipicamente TCP) attraverso un proxy, es. per HTT
 
 **Safe** = non modifica lo stato del server. **Idempotente** = richieste ripetute → stesso risultato finale.
 
----
-## Caso pratico: GET → HEAD (Burp Suite)
+#### 🔬Caso pratico: GET → HEAD (Burp Suite)
 
 Scenario tipico: un endpoint blocca l'accesso non autenticato su GET, ma un controllo di autorizzazione mal implementato (es. verificato solo su `req.method === 'GET'`) lascia HEAD non filtrato.
 

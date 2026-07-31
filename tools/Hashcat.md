@@ -1,7 +1,8 @@
+#### 🛠️Cos'è
+
 Tool a riga di comando per il **recupero/cracking di password** a partire dal loro hash. Sfrutta CPU e/o GPU per calcolare velocemente l'hash di enormi quantità di candidati e confrontarli con l'hash target, fino a trovare una corrispondenza.
 
----
-#### Sintassi base
+#### 💻Sintassi base
 
 ```bash
 hashcat -m <tipo_hash> -a <tipo_attacco> hash.txt wordlist.txt
@@ -12,17 +13,16 @@ hashcat -m <tipo_hash> -a <tipo_attacco> hash.txt wordlist.txt
 - **`hash.txt`**: file con l'hash (o gli hash, uno per riga) da craccare
 - **`wordlist.txt`**: la lista di password candidate da provare
 
----
-#### Come scegliere `-m` (modulo/algoritmo)
+#### 🔢Come scegliere `-m` (modulo/algoritmo)
 
 Il modo più rapido è contare i caratteri esadecimali dell'hash:
 
-| Lunghezza hash | Algoritmo | Modulo `-m` |
-| -------------- | --------- | ----------- |
-| 32 caratteri   | MD5       | `0`         |
-| 40 caratteri   | SHA1      | `100`       |
-| 64 caratteri   | SHA256    | `1400`      |
-| 128 caratteri  | SHA512    | `1700`      |
+|Lunghezza hash|Algoritmo|Modulo `-m`|
+|---|---|---|
+|32 caratteri|MD5|`0`|
+|40 caratteri|SHA1|`100`|
+|64 caratteri|SHA256|`1400`|
+|128 caratteri|SHA512|`1700`|
 
 `es:` per contare i caratteri direttamente da terminale:
 
@@ -36,8 +36,7 @@ Se non sei sicuro dell'algoritmo, puoi anche lasciare che sia hashcat a suggerir
 hashcat --identify hash.txt
 ```
 
----
-#### Come scegliere `-a` (tipo di attacco)
+#### 🎯Come scegliere `-a` (tipo di attacco)
 
 |Codice|Nome|Cosa fa|
 |---|---|---|
@@ -48,8 +47,7 @@ hashcat --identify hash.txt
 
 Per la maggior parte delle CTF con password "deboli ma non banalissime", l'attacco **`-a 0`** con la wordlist **rockyou.txt** è il primo tentativo standard.
 
----
-#### Comandi essenziali
+#### ⚡Comandi essenziali
 
 **Craccare un hash con dizionario:**
 
@@ -69,8 +67,7 @@ hashcat -m 0 hash.txt --show
 hashcat -m 0 -a 0 hash.txt rockyou.txt --force
 ```
 
----
-#### Workflow tipico in una CTF
+#### 🔁Workflow tipico in una CTF
 
 ```bash
 echo "HASH_DA_CRACCARE" > hash.txt
@@ -78,9 +75,7 @@ hashcat -m <modulo> -a 0 hash.txt /usr/share/wordlists/rockyou.txt
 hashcat -m <modulo> hash.txt --show
 ```
 
----
-
-#### Alternative equivalenti
+#### 🔀Alternative equivalenti
 
 |Tool|Quando preferirlo|
 |---|---|

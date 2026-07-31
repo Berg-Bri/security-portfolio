@@ -1,11 +1,14 @@
-#### Tool usati
+#### 🛠️Tool usati
 
-#### Descrizione
+#### 🧩Descrizione
 
-#### Analisi / Ricognizione
+#### 🔍Analisi / Ricognizione
 
-#### Sfruttamento
+#### ⚙️Sfruttamento
 
-#### Flag
+#### 🚩Flag
 
-#### Lezioni apprese
+#### 💡Lezioni apprese
+
+
+

@@ -1,6 +1,6 @@
 #### 🛠️Tool usati
 
-- [[tools/netcat|netcat]]
+- [[netcat|netcat]]
 - Python
 
 #### 🧩Descrizione

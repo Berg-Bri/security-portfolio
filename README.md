@@ -28,4 +28,4 @@ Le tecniche descritte non devono essere utilizzate su sistemi per i quali non si
 
 ## Licenza
 
-Questo repository è distribuito con licenza [MIT](LICENSE).
+Questo repository è distribuito con licenza [MIT](LICENSE.txt).

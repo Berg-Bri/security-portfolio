@@ -1,7 +1,7 @@
 #### 🛠️Tool usati
 
-- [[exiftool]]
-- [[base64]]
+-  [exiftool](../../../../../../tools/exiftool.md)
+- [base64](../../../../../../tools/base64.md)
 
 #### 🧩Descrizione
 

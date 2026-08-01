@@ -1,6 +1,6 @@
 #### 🛠️Tool usati
 
-- [[netcat|netcat]]
+- [netcat](../../../../../../tools/netcat.md)
 - Python
 
 #### 🧩Descrizione

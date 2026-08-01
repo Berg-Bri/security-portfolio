@@ -1,9 +1,9 @@
 #### 🛠️Tool usati
 
-- [[exiftool]]
-- [[xxd]]
-- [[zsteg]]
-- [[base64]]
+- [exiftool](../../../../../../tools/exiftool.md)
+- [xxd](../../../../../../tools/xxd.md)
+- [zsteg](../../../../../../tools/zsteg.md)
+- [base64](../../../../../../tools/base64.md)
 
 #### 🧩Descrizione
 

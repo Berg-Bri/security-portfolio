@@ -4,7 +4,7 @@ Lo scambio Diffie-Hellman permette a due parti di concordare un segreto condivis
 
 #### 🔑Parametri e significato
 
-Nello script della challenge [[writeups/ctf/CyLab/Cryptography/Easy/shared-secrets|shared-secrets]] i parametri hanno questo ruolo:
+Nello script della challenge [shared-secrets](../writeups/ctf/CyLab/Cryptography/Easy/shared-secrets/README.md) i parametri hanno questo ruolo:
 
 |Simbolo|Ruolo|Note|
 |---|---|---|

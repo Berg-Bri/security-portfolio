@@ -1,9 +1,8 @@
 #### 🛠️Tool usati
 
-- [`base64`](https://claude.ai/tools/base64.md)
-- [`tesseract`](https://claude.ai/tools/tesseract.md)
-- [`xxd`](https://claude.ai/tools/xxd.md)
-
+- [base64](../../../../../../tools/base64.md)
+- [tesseract](../../../../../../tools/tesseract.md)
+- [xxd](../../../../../../tools/xxd.md)
 #### 🧩Descrizione
 
 Il team di SOC ha scoperto un file di registro sospettosamente grande dopo una recente violazione. Quando l'hanno aperto, hanno trovato un enorme blocco di testo codificato invece di registri tipici. Potrebbe esserci qualcosa di nascosto dentro? La tua missione è ispezionare il file risultante e rivelarne il vero scopo. Il team si affida alle tue abilità per scoprire qualsiasi informazione nascosta all'interno di questo registro insolito.

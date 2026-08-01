@@ -1,7 +1,3 @@
-#### 🛠️Tool usati
-
-Nessuno.
-
 #### 🧩Descrizione
 
 _"La crittografia può essere facile, sai cos'è ROT13?" `cvpbPGS{abg_gbb_onq_bs_n_ceboyrz}`.

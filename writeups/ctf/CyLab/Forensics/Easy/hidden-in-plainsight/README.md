@@ -1,8 +1,8 @@
 #### 🛠️Tool usati
 
-- [[exiftool]]
-- [[base64]]
-- [[steghide]]
+- [exiftool](../../../../../../tools/exiftool.md)
+- [base64](../../../../../../tools/base64.md)
+- [steghide](../../../../../../tools/steghide.md)
 
 #### 🧩Descrizione
 

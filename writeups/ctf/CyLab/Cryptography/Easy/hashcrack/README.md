@@ -1,7 +1,7 @@
 #### 🛠️Tool usati
 
-- [[netcat]]
-- [[hashcat]]
+- [netcat](../../../../../../tools/netcat.md)
+- [hashcat](../../../../../../tools/hashcat.md)
 
 #### 🧩Descrizione
 

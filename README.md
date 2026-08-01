@@ -17,7 +17,7 @@ security-portfolio/
         │   ├── Cryptography/
         │   ├── Forensics/
         │   ├── ReverseEngineering/
-        │   └── Web Exploitation/
+        │   └── WebExploitation/
         └── metasploitable/
 ```
 ## Etica

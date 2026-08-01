@@ -1,7 +1,7 @@
 #### 🛠️Tool usati
 
-- [[xxd]]
-- [[tesseract]]
+- [xxd](../../../../../../tools/xxd.md)
+- [tesseract](../../../../../../tools/tesseract.md)
 
 #### 🧩Descrizione
 

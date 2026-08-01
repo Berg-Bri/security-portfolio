@@ -1,7 +1,7 @@
 #### 🛠️Tool usati
 
-- [[strings]]
-- [[gunzip]] 
+- [strings](../../../../../../tools/strings.md)
+- [gunzip](../../../../../../tools/gunzip.md)
 #### 🧩Descrizione
 
 Potete trovare la flag in questa immagine del disco?

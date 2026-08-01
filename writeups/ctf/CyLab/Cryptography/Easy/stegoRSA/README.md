@@ -1,8 +1,8 @@
 #### 🛠️ Tool usati
 
-- [[exiftool]]
-- [[xxd]]
-- [[openssl]]
+- [exiftool](../../../../../../tools/exiftool.md)
+- [xxd](../../../../../../tools/xxd.md)
+- [openssl](../../../../../../tools/openssl.md)
 #### 🧩Descrizione
 
 _"Un messaggio è stato criptato utilizzando RSA. La chiave pubblica non c'è più... ma qualcuno potrebbe essere stato disattento con la chiave privata. Puoi recuperarlo e decifrare il messaggio?"_

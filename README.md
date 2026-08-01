@@ -35,4 +35,4 @@ Tutte le attività documentate in questo repository sono state condotte su siste
 
 ## 📜 Licenza
 
-Questo repository è distribuito con licenza MIT.
+Questo repository è distribuito con licenza [MIT](LICENSE.txt).
